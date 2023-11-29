@@ -1,5 +1,6 @@
 ![Docker Automated build](https://img.shields.io/docker/automated/bosbaber/docker-panadoc-mermaid)
 
+
 # Docker panadoc mermaid - Dockerfile
 
 This Docker image is configured with Pandoc, enhanced TeX package installation, Node.js, and [mermaid-filter](https://github.com/raghur/mermaid-filter). It's tailored to run the [eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template/) template efficiently.
@@ -36,3 +37,4 @@ Very important, note that the .puppeteer.json file is required to run mermaid-fi
         "args": ["--no-sandbox"]
     }
     ```
+2. This image is huge! about 5GB, this is because of the TeX Live installation. Should be fixed in future version.
