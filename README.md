@@ -1,3 +1,6 @@
+![Docker Automated build](https://img.shields.io/docker/automated/bosbaber/docker-panadoc-mermaid)
+![Docker Build Status](https://img.shields.io/docker/build/bosbaber/docker-panadoc-mermaid)
+
 # Docker panadoc mermaid - Dockerfile
 
 This Docker image is configured with Pandoc, enhanced TeX package installation, Node.js, and [mermaid-filter](https://github.com/raghur/mermaid-filter). It's tailored to run the [eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template/) template efficiently.
