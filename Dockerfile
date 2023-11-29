@@ -1,13 +1,16 @@
 FROM pandoc/latex:latest
 
 # Install additional TeX packages such as those used by eisvogel template
+RUN apk add bash
+RUN apk add wget perl fontconfig-dev freetype-dev tar
 
-RUN tlmgr option repository http://mirror.ctan.org/systems/texlive/tlnet \
-    tlmgr update \
-    && tlmgr install csquotes mdframed needspace sourcesanspro ly1 mweights \
+COPY install.sh /tmp
+RUN bash /tmp/install.sh
+
+RUN tlmgr install csquotes mdframed needspace sourcesanspro ly1 mweights \
     sourcecodepro titling pagecolor epstopdf zref footnotebackref \
-    koma-script hardwrap catchfile \
-    && apk add --update ghostscript
+    koma-script hardwrap catchfile
+RUN apk add --update ghostscript
 
 # Install Node and mermaid-filter
 
