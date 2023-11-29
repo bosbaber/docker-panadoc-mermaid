@@ -19,3 +19,5 @@ ENV CHROME_BIN="/usr/bin/chromium-browser" \
 
 RUN apk add --update udev ttf-freefont chromium npm \
     && npm install -g mermaid-filter@1.4.5 --unsafe-perm=true
+
+ENTRYPOINT [ "/usr/local/bin/pandoc" ]
