@@ -1,4 +1,5 @@
 ![Docker Automated build](https://img.shields.io/docker/automated/bosbaber/docker-panadoc-mermaid)
+
 ![Docker Build Status](https://img.shields.io/docker/build/bosbaber/docker-panadoc-mermaid)
 
 # Docker panadoc mermaid - Dockerfile
