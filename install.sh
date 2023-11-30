@@ -1,4 +1,3 @@
-wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
 zcat < install-tl-unx.tar.gz | tar xf -
 
 # Get the list of directories matching the pattern "install-tl-*"

@@ -4,6 +4,7 @@ FROM pandoc/latex:latest
 RUN apk add bash
 RUN apk add wget perl fontconfig-dev freetype-dev tar
 
+RUN wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
 COPY install.sh /tmp
 RUN bash /tmp/install.sh
 
