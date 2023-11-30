@@ -1,4 +1,8 @@
-![Docker Automated build](https://img.shields.io/docker/automated/bosbaber/docker-panadoc-mermaid)
+![Docker Automated build](https://img.shields.io/docker/cloud/automated/bosbaber/docker-panadoc-mermaid)  
+
+![Docker Automated build](https://img.shields.io/docker/cloud/build/bosbaber/docker-panadoc-mermaid)
+
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/bosbaber/docker-panadoc-mermaid/Docker%20Image%20CI)
 
 
 # Docker panadoc mermaid - Dockerfile
